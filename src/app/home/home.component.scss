@@ -1,0 +1,100 @@
+@import '../../assets/scss/variables';
+.banner{
+    background-image: linear-gradient(221deg, #fcfaf7, #f8f2ec);
+    height: 100vh;
+    width: 100%;
+    &:after{
+        content: '';
+        position: absolute;
+        background-image: url('../../assets/images/banner/kari-shea-207221.png');
+        width: 54%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-size:100%; 
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .container{
+        position: relative;
+        z-index: 99;
+    }
+    h1{
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.31;
+        letter-spacing: 0.53px;
+        color: #363637;
+        margin-bottom: 50px;
+        span{
+            color: $primary;
+        }
+    }
+    @media screen and (max-width:600px) {
+        &:after{
+           display: none;
+        }
+        h1{
+            font-size: 34px;
+        }
+    }
+}
+.links{
+    ul{
+        padding:40px 0px;
+        margin: 0px;
+        li{
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0.38px;
+            margin-right: 59px;
+            color: #a1a9b3;
+            &.active{
+                color: $primary;
+            }
+            span{
+                vertical-align: middle;
+                display: inline-flex;
+                margin-right: 15px;
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+    @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+        ul{
+            li{
+                font-size: 14px;
+                width: 33.3%;
+                margin: 15px 0px;
+             
+            }
+        }
+    }
+    
+    @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+        ul{
+            li{
+                font-size: 14px;
+                margin-right: 45px;
+            }
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        ul{
+            li{
+                font-size: 14px;
+                width: 50%;
+                margin: 10px 0px;
+                img{
+                    width: 20px;
+                }
+            }
+        }
+    }
+  
+
+}
