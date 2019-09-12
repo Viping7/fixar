@@ -61,13 +61,13 @@
               background: $primary;
               color: #fff;
           }
-          @media screen and (max-width:1200px) {
+          @media screen and (max-width:1199px) {
             padding: 10px 12px;
             margin-bottom: 10px;
           }
       }  
     }
-    @media screen and (max-width:1200px) {
+    @media screen and (max-width:1199px) {
         .input-group{
             .form-control{
                 font-size: 15px;
